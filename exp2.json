@@ -1,0 +1,32 @@
+{
+  "experiment_name": "exp2_bpe_bilstm1_lstm2",
+  "dataset_dir": "/content/drive/MyDrive/urdu_ghazals_rekhta",
+  "work_dir": "/content/drive/MyDrive/urdu_roman_nmt/outputs/exp2",
+  "tokenizer": {
+    "type": "bpe",
+    "src_vocab_size": 6000,
+    "tgt_vocab_size": 6000,
+    "min_freq": 2
+  },
+  "model": {
+    "embedding_dim": 128,
+    "hidden_size": 256,
+    "enc_layers": 1,
+    "dec_layers": 2,
+    "dropout": 0.1,
+    "use_attention": true,
+    "arch": "bilstm_lstm"
+  },
+  "training": {
+    "batch_size": 64,
+    "max_epochs": 10,
+    "learning_rate": 0.001,
+    "clip_grad": 1.0,
+    "teacher_forcing_start": 0.6,
+    "teacher_forcing_end": 0.3,
+    "teacher_forcing_anneal_epochs": 6,
+    "seed": 42,
+    "save_every": 1,
+    "eval_every": 1
+  }
+}
