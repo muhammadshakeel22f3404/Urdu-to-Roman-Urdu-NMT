@@ -27,28 +27,31 @@ At least three experiments varying hyperparameters are included in `configs/exp*
 ## Streamlit
 `app/streamlit_app.py` provides a public UI. You can deploy via Streamlit Community Cloud.
 
-## Code Tree
+## Project Code Tree
+
+```
 urdu_roman_nmt/
-├─ requirements.txt
-├─ README.md
-├─ configs/
-│  ├─ exp1.json
-│  ├─ exp2.json
-│  └─ exp3.json
-├─ data_prep/
-│  ├─ normalize.py
-│  └─ transliteration.py
-├─ tokenizers/
-│  ├─ bpe.py
-│  └─ wordpiece.py
-├─ nmt/
-│  ├─ datasets.py
-│  ├─ models.py
-│  ├─ train.py
-│  ├─ evaluate.py
-│  ├─ infer.py
-│  └─ utils.py
-├─ app/
-│  └─ streamlit_app.py
-└─ experiments/
-   └─ run_experiments.py
+├── requirements.txt
+├── README.md
+├── configs/
+│   ├── exp1.json
+│   ├── exp2.json
+│   └── exp3.json
+├── data_prep/
+│   ├── normalize.py
+│   └── transliteration.py
+├── tokenizers/
+│   ├── bpe.py
+│   └── wordpiece.py
+├── nmt/
+│   ├── datasets.py
+│   ├── models.py
+│   ├── train.py
+│   ├── evaluate.py
+│   ├── infer.py
+│   └── utils.py
+├── app/
+│   └── streamlit_app.py
+└── experiments/
+    └── run_experiments.py
+```
